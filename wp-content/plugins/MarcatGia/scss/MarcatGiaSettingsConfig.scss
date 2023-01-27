@@ -1,0 +1,101 @@
+@charset "utf-8";
+//@import 'sass_base/base';
+@import 'sass_base/mixin';
+@import 'sass_base/animate';
+@import 'sass_base/icon_arrow';
+
+.MarcatGiaSettingWapper {
+    @include animation_fadeIn();
+    @include wapper_setting();
+    h2 {
+        font-size: 20px !important;
+        padding: 15px 0 15px 10px !important;
+        margin: 25px 0 10px 0 !important;
+        border-bottom: 1px solid #CCC;
+        border-top: 1px solid #CCC;
+        font-weight: 600;
+        background: #FFF;
+        text-align: center;
+        &+p {
+            text-align: center;
+        }
+    } 
+
+}
+.MarcatGiaSettingGnavi {
+    margin: 4% auto;
+    ul {
+        @include outer-container(100%);
+        li {
+            width: 20%;
+            float: left;
+            @include media($sp) {
+                width: 50%;
+            }
+            a {
+                @include buttontype02(#FFF,#FFF,2px,#000,#0085ba,#0085ba,#FFF); display:block;
+                padding: 2% 0;
+                font-weight: bold;
+            }
+            &.cheackd a {
+                background: #0085ba;
+                color: #FFF;
+                border: 2px solid #0085ba;
+            }
+        }            
+    }
+}
+
+.MarcatGiaSettingFunction_sec {
+    margin: 5% 0 0 0;
+    h3 {
+        font-size: 18px !important;
+        padding: 10px 0 10px 10px !important;
+        margin: 0px 0 10px 0 !important;
+        border-bottom: 1px solid #CCC;
+        font-weight: 600;
+        background: #FFF;
+        text-align: left;
+    }
+    .MarcatGiaSettingFunctionKiroku {
+        margin: 2% 0;
+        width: 100%;
+        table-layout: fixed;
+        th,td {
+            padding: 1%;
+        }
+        th {
+            width: 20%;
+            background: #FFF;
+            text-align: center;
+        }
+        td {
+            width: 80%;
+            text-align: left;
+            background: #FFF;
+        }
+    }
+    ul {
+        max-height: 350px;
+        overflow: auto;
+        margin:0 1%;
+        li {
+            padding: 1% 0;
+            border-bottom: 1px solid #CCC;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            h4 {
+                display: table-cell;
+                width: 20%;
+                vertical-align: top;
+            }
+            p {
+                display: table-cell;
+                width: 80%;
+                vertical-align: top;
+                line-height: 150%;
+            }
+        }
+    }
+}

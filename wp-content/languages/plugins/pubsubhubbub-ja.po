@@ -1,0 +1,48 @@
+# Translation of Plugins - WebSub/PubSubHubbub - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WebSub/PubSubHubbub - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-10-20 16:29:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WebSub/PubSubHubbub - Stable (latest release)\n"
+
+#. Author URI of the plugin/theme
+msgid "https://notiz.blog/"
+msgstr "https://notiz.blog/"
+
+#. Author of the plugin/theme
+msgid "Matthias Pfefferle"
+msgstr "Matthias Pfefferle"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/pubsubhubbub/wordpress-pubsubhubbub/"
+msgstr "https://github.com/pubsubhubbub/wordpress-pubsubhubbub/"
+
+#. Plugin Name of the plugin/theme
+msgid "WebSub/PubSubHubbub"
+msgstr "WebSub/PubSubHubbub"
+
+#: templates/settings-page.php:26
+msgid "Thanks for using WebSub/PubSubHubbub!"
+msgstr "WebSub/PubSubHubbub をご利用ありがとうございます。"
+
+#. Description of the plugin/theme
+msgid "A better way to tell the world when your blog is updated."
+msgstr "あなたのブログが更新されたときに世界に伝えるためのより良い方法。"
+
+#: pubsubhubbub.php:153
+msgid "Settings"
+msgstr "設定"
+
+#: templates/settings-page.php:17
+msgid "Hubs (one per line)"
+msgstr "ハブ (1行に1つ)"
+
+#: templates/settings-page.php:2
+msgid "Define custom hubs"
+msgstr "カスタムハブを定義する"

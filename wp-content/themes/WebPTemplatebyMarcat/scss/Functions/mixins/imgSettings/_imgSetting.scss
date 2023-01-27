@@ -1,0 +1,12 @@
+@mixin imgcenter {
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0 0px 0 0;
+}
+@mixin imgwidth($width:100%) {
+    img {
+        width:$width;
+        height: auto;
+    }
+}

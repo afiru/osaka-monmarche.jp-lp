@@ -1,0 +1,78 @@
+@charset "utf-8";
+@import '../sass_base/mixin';
+@import '../sass_base/animate';
+@import '../sass_base/icon_arrow';
+
+//変更部分
+$thwidth: 30%;//thの横幅
+$tdwidth: 70%;//tdの横幅
+$thvertical-align: 'middle';
+$table_thwidth: 40%;
+$table_tdwidth: 60%;
+
+
+table {
+    th,td {
+        padding: 1%;
+    }
+    th {
+        width:$thwidth;
+        vertical-align: $thvertical-align;
+        @include outer-container(100%);
+        .title {
+            float: left;
+        }
+        .hissu {
+            float: right;
+        }
+    }
+    td {
+        width:$tdwidth;
+        input {
+            width: 100%;
+            padding: 1%;
+        }
+        textarea {
+            width: 100%;
+            padding: 1%;
+        }
+        #tel {
+            width: 30%;
+        }
+        .table_box_name_kana {
+            dispaly:table;
+            width:100%;
+            .title_table {
+                display: table-cell;
+                width:12%;
+                text-align: left;
+                padding: 1% 1% 1% 0;
+            }
+            .input_table {
+                display: table-cell;
+                width:45%;
+                text-align: center;
+                padding: 1% 1% 1% 0;
+            }
+        }
+        .table_address {
+            .table_th {
+                width: $table_thwidth;
+                padding: 1% 0;
+            }
+            .table_td {
+                width: $table_tdwidth;
+                padding: 1% 0;
+                ul {
+                    @include outer-container(100%);
+                    display: table;
+                    li {
+                        width: 48%;
+                        float: left;
+                    }
+                }
+            }
+        }
+        
+    }
+}

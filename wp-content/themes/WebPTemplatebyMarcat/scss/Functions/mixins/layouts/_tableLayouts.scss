@@ -1,0 +1,30 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin tablesetting {
+    @include media($pc) {
+        display: table;
+        width: 100%;
+    }
+    @include media($tab) {
+        display: table;
+        width: 100%;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}
+@mixin tdsetting($width) {
+    @include media($pc) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($tab) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}

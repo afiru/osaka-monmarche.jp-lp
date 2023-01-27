@@ -1,0 +1,74 @@
+
+15-09-2021 16:09:43 [localhost][warning] The post type (block_lab) is not allowed for generation in settings
+-------------------------------
+15-09-2021 16:10:15 [localhost][warning] The post type (smart-custom-fields) is not allowed for generation in settings
+-------------------------------
+15-09-2021 16:10:25 [localhost][warning] The post type (smart-custom-fields) is not allowed for generation in settings
+-------------------------------
+15-09-2021 16:10:41 [localhost][debug] Found images: array (
+)
+15-09-2021 16:10:41 [localhost][warning] The post type (smart-custom-fields) is not allowed for generation in settings
+-------------------------------
+15-09-2021 16:10:45 [localhost][info] Posts query: array (
+  'has_thumb' =&gt; false,
+  'type' =&gt; 'post',
+  'status' =&gt; 'publish',
+  'category' =&gt; 0,
+  'date_start' =&gt; 0,
+  'date_end' =&gt; 0,
+)
+-------------------------------
+15-09-2021 16:12:52 [localhost][info] Posts query: array (
+  'has_thumb' =&gt; false,
+  'type' =&gt; 'post',
+  'status' =&gt; 'publish',
+  'category' =&gt; 0,
+  'date_start' =&gt; 0,
+  'date_end' =&gt; 0,
+)
+-------------------------------
+15-09-2021 16:13:04 [localhost][info] Posts query: array (
+  'has_thumb' =&gt; false,
+  'type' =&gt; 'post',
+  'status' =&gt; 'publish',
+  'category' =&gt; 0,
+  'date_start' =&gt; 0,
+  'date_end' =&gt; 0,
+)
+-------------------------------
+15-09-2021 16:20:55 [localhost][debug] Found images: array (
+)
+15-09-2021 16:20:55 [localhost][warning] The post type (smart-custom-fields) is not allowed for generation in settings
+-------------------------------
+15-09-2021 16:23:30 [localhost][info] Posts query: array (
+  'has_thumb' =&gt; false,
+  'type' =&gt; 'post',
+  'status' =&gt; 'publish',
+  'category' =&gt; 0,
+  'date_start' =&gt; 0,
+  'date_end' =&gt; 0,
+)
+-------------------------------
+15-09-2021 16:24:33 [localhost][debug] Found images: array (
+)
+15-09-2021 16:24:37 [localhost][warning] The post type (revision) is not allowed for generation in settings
+15-09-2021 16:24:37 [localhost][debug] Found images: array (
+)
+15-09-2021 16:24:37 [localhost][debug] Found images: array (
+)
+-------------------------------
+15-09-2021 16:24:38 [localhost][debug] Found images: array (
+)
+15-09-2021 16:24:40 [localhost][warning] The post type (revision) is not allowed for generation in settings
+15-09-2021 16:24:41 [localhost][debug] Found images: array (
+)
+-------------------------------
+27-01-2023 17:59:25 [sunplads-staging.com][info] Posts query: array (
+  &#039;has_thumb&#039; =&gt; false,
+  &#039;type&#039; =&gt; &#039;post&#039;,
+  &#039;status&#039; =&gt; &#039;publish&#039;,
+  &#039;category&#039; =&gt; 0,
+  &#039;date_start&#039; =&gt; 0,
+  &#039;date_end&#039; =&gt; 0,
+)
+-------------------------------

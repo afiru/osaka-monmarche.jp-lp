@@ -1,0 +1,95 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+//@include marginPercent(横幅基準値, margin-top（px）, margin-left（px）, margin-bottom(px), margin-bottom(px));
+@mixin marginPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto and $mRight == auto {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }@elseif $mLeft == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: floor((($mRight / $parentPxWidth) * 10000%)) / 100;
+        }
+    }@elseif $mRight == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: auto;
+        @include media($tab) {
+            @include media($tab) {
+                margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+                margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+                margin-left: floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+                margin-right: auto;
+            }
+        }
+    }@else {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }
+    }
+}
+@mixin marginVw($mTop, $mRight, $mBottom, $mLeft) {
+    @if $mLeft == auto and $mRight == auto {
+        margin-top:(($mTop / 1920) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @elseif $mLeft == auto{
+        margin-top:(($mTop / 1920) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        margin-left: auto;
+        margin-right: (($mRight / 1920) * 10000vw) / 100;
+    }
+    @elseif $mRight == auto{
+        margin-top:(($mTop / 1920) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        margin-left: (($mLeft / 1920) * 10000vw) / 100;
+        margin-right: auto;
+    }
+    @else {
+        margin : (($mTop / 1920) * 10000vw) / 100 (($mRight / 1920) * 10000vw) / 100 (($mBottom / 1920) * 10000vw) / 100 (($mLeft / 1920) * 10000vw) / 100;
+    }
+}
+@mixin marginVwSp($mTop, $mRight, $mBottom, $mLeft) {
+    @if $mLeft == auto and $mRight == auto {
+        margin-top:(($mTop / 375) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 375) * 10000vw) / 100;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @elseif $mLeft == auto{
+        margin-top:(($mTop / 375) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 375) * 10000vw) / 100;
+        margin-left: auto;
+        margin-right: (($mRight / 375) * 10000vw) / 100;
+    }
+    @elseif $mRight == auto{
+        margin-top:(($mTop / 375) * 10000vw) / 100;
+        margin-bottom: (($mBottom / 375) * 10000vw) / 100;
+        margin-left: (($mLeft / 375) * 10000vw) / 100;
+        margin-right: auto;
+    }
+    @else {
+        margin : (($mTop / 375) * 10000vw) / 100 (($mRight / 375) * 10000vw) / 100 (($mBottom / 375) * 10000vw) / 100 (($mLeft / 375) * 10000vw) / 100;
+    }
+}

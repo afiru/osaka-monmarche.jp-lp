@@ -1,0 +1,25 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+//@include ontener_width(横幅基準値,使用する要素の横幅);
+@mixin ontener_width( $parentPxWidth, $pxWidth ){
+    width: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+
+@mixin ontenerWVw( $parentPxWidth, $pxWidth ){
+    width: floor((( $pxWidth / $parentPxWidth ) * 10000vw )) / 100;
+}
+@mixin widthVw($pxWidth){
+    width: (( $pxWidth / 1920 ) * 10000vw ) / 100;
+    img {
+        max-width: $pxWidth + px;
+    }
+}
+@mixin widthVwSP($pxWidth){
+    width: (( $pxWidth / 375 ) * 10000vw ) / 100;
+    img {
+        max-width: $pxWidth + px;
+    }
+}
+@mixin widthCalc($wap , $size) {
+    width: calc($wap - $size);
+}

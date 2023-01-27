@@ -1,0 +1,358 @@
+@charset "utf-8";
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+@import "../mysetting";
+
+//PC時
+$pc: new-breakpoint(min-width 1025px 16);//PC時（基本ベース）
+$nomal_pc: new-breakpoint(max-width 1366px 14);//PC時（解像度　1366pxの時の指定）
+$big_pc: new-breakpoint(max-width 1920px 12);//PC時（解像度　1366pxの時の指定）
+
+//タブレット時
+$tab: new-breakpoint(max-width 1024px 8);//タブレット横
+$tab_tate: new-breakpoint(max-width 768px 6);//タブレット縦
+
+//スマホ時
+$sp: new-breakpoint(max-width 767px 4);
+
+$gutter: golden-ratio(0em, 0);
+$fg-gutter: $gutter;
+
+//mixinを指定
+@mixin mintyou($fontsize) {
+    font-size: $fontsize;
+    font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+@mixin goshick($fontsize) {
+    font-size: $fontsize;
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+@mixin marugoshick($fontsize) {
+    font-size: $fontsize;
+    font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro",
+        "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+@mixin rs_font_size($pc_size:16px,$tab_size:1.5625vw,$sp_size:4.266666666666667vw) {
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.5625vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==4.266666666666667vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin shinmintyou($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family:"sans-serif","Sawarabi Mincho","Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.25vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==3vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin shingosick($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family: 'Noto Sans Japanese',Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.25vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==3vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin imgcenter {
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0 0px 0 0;
+}
+@mixin kadomaru($radius) {
+    border-radius: $radius;        /* CSS3草案 */  
+    -webkit-border-radius: $radius;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: $radius;   /* Firefox用 */  
+}
+//テーブル用
+@mixin tablesetting {
+    @include media($pc) {
+        display: table;
+        width: 100%;
+    }
+    @include media($tab) {
+        display: table;
+        width: 100%;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}
+@mixin tdsetting($width) {
+    @include media($pc) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($tab) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}
+@mixin wapper_setting() {
+    @include media($pc) {
+        width: $pc_wapper_size;
+        margin-left:auto;
+		margin-right:auto;
+    }
+    @include media($tab) {
+        width: 98%;
+        margin-left:auto;
+		margin-right:auto;
+    }
+    @include media($sp) {
+        width: 100%;
+        margin-left:auto;
+		margin-right:auto;
+    }
+}
+
+@mixin wapper_setting2() {
+    @include media($pc) {
+        width: $pc_innner_wapper_size;
+        margin-left:auto;
+		margin-right:auto;
+    }
+    @include media($tab) {
+        width: 98%;
+        margin-left:auto;
+		margin-right:auto;
+    }
+    @include media($sp) {
+        width: 100%;
+        margin-left:auto;
+		margin-right:auto;
+    }
+}
+
+//スマホのときだけ出す関数
+@mixin sp_only() {
+    @include media($pc) {
+        display: none;
+    }
+    @include media($tab) {
+        display: none;
+    }
+    @include media($sp) {
+        display: block;
+    }
+}
+
+@mixin pc_only() {
+    @include media($tab) {
+        display: block;
+    }
+    @include media($pc) {
+        display: block;
+    }
+    @include media($sp) {
+        display: none;
+    }
+}
+
+@mixin imgwidth($width:100%) {
+    img {
+        width:$width;
+        height: auto;
+    }
+}
+
+
+//@include ontener_width(横幅基準値,使用する要素の横幅);
+@mixin ontener_width( $parentPxWidth, $pxWidth ){
+    width: floor((( $pxWidth / $parentPxWidth ) * 10000% )) / 100;
+}
+//@include marginPercent(横幅基準値, margin-top（px）, margin-left（px）, margin-bottom(px), margin-bottom(px));
+@mixin marginPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto and $mRight == auto {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: auto;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }@elseif $mLeft == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: auto;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            margin-left: auto;
+            margin-right: floor((($mRight / $parentPxWidth) * 10000%)) / 100;
+        }
+    }@elseif $mRight == auto{
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: auto;
+        @include media($tab) {
+            @include media($tab) {
+                margin-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+                margin-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+                margin-left: floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+                margin-right: auto;
+            }
+        }
+    }@else {
+        margin-top:$mTop + 0px;
+        margin-bottom: $mBottom + 0px;
+        margin-left: $mLeft + 0px;
+        margin-right: $mRight + 0px;
+        @include media($tab) {
+            margin : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }
+    }
+}
+
+@mixin archives_ul_settings_3clumes($wapper_size:100%,$width:100%,$clume_widht:100%,$defo_margin:0%,$double_margin:0%) {
+    width: floor((( $width / $wapper_size ) * 10000% )) / 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items:flex-start;
+    li {
+        justify-content: space-between;
+        width: $clume_widht;
+        margin: $defo_margin;        
+    }
+    @for $i from 1 through 12{
+        @if $i % 3 ==2 {
+            li:nth-child(#{$i}) {
+                margin: $double_margin;
+            }
+        }
+    }
+}
+@mixin paddingPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto or $mRight == auto {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: 0 + 0px;
+        padding-right: 0 + 0px;
+        @include media($tab) {
+            padding-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            padding-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }@else {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: $mLeft + 0px;
+        padding-right: $mRight + 0px;
+        @include media($tab) {
+            padding : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }        
+    }
+}
+
+@mixin lineheight($fontsize,$lineheight){
+    line-height: $lineheight/$fontsize;
+}

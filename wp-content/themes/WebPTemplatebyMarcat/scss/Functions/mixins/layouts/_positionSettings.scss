@@ -1,0 +1,34 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin contentSet() {
+    content: '';
+    display: block;    
+}
+@mixin positionWHCenter() {
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0;
+    margin: auto;
+}
+@mixin positionWCenter() {
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+}
+@mixin positionHCenter() {
+    position: absolute;
+    top: 0;bottom: 0;
+    margin: auto;
+}
+//ƒ|ƒWƒVƒ‡ƒ“
+@mixin posionTop($pxouterheight,$pxposion) {
+    top:(( $pxposion / $pxouterheight ) * 10000vw ) / 100;
+}
+@mixin posionBottom($pxouterheight,$pxposion) {
+    bottom:(( $pxposion / $pxouterheight ) * 10000vw ) / 100;
+}
+@mixin posionLeft($pxouterheight,$pxposion) {
+    left:(( $pxposion / $pxouterwidth ) * 10000vw ) / 100;
+}
+@mixin posionRigh($pxouterheight,$pxposion) {
+    right:(( $pxposion / $pxouterwidth ) * 10000vw ) / 100;
+}

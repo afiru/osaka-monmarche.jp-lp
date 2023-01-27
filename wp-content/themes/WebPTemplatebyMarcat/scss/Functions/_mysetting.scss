@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+//■画像のパス（WPのURLを記載する）
+$imgpass : "";
+
+//■横幅の設定
+$pcSize:1100px;
+$tabSize:1099px;
+$tabTateSize:769px;//ここは不動だと思う
+$spSize:768px;//ここは不動だと思う
+//ここも変更してほしい
+$pcSizePxNone:1100;
+$tabSizePxNone:1099;
+$tabTateSizePxNone:769;//ここは不動だと思う
+$spSizePxNone:768;//ここは不動だと思う
+
+
+$pc_wapper_size:$pcSize;
+$pc_wapper_size_px:$pcSizePxNone;
+
+//ページ内でコンテンツ幅が変わっている場合はこれで調節も可能（使うことはまず無い）
+$pc_innner_wapper_size : 960px;

@@ -1,0 +1,176 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin mintyou($fontsize) {
+    font-size: $fontsize;
+    font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+@mixin goshick($fontsize) {
+    font-size: $fontsize;
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+@mixin marugoshick($fontsize) {
+    font-size: $fontsize;
+    font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro",
+        "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+@mixin rsFontSize($pc_size:0px,$tab_size:0vw,$sp_size:0vw) {
+    @if $pc_size==0px {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size+px;
+        }
+    }
+    @if $tab_size==0vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: (( $tab_size / $tabSizePxNone ) * 10000vw ) / 100;
+        }
+    }
+    @if $sp_size==0vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: (( $sp_size / 375 ) * 10000vw ) / 100;
+        }
+    }
+}
+//旧版
+@mixin rs_font_size($pc_size:16px,$tab_size:1.5625vw,$sp_size:4.266666666666667vw) {
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.5625vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==4.266666666666667vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+@mixin shinmintyou($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family:"sans-serif","Sawarabi Mincho","Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+    @if $pc_size==0px {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==0vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: (( $tab_size / $tab ) * 10000vw ) / 100;
+        }
+    }
+    @if $sp_size==0vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: (( $sp_size / $sp ) * 10000vw ) / 100;
+        }
+    }
+}
+@mixin shingosick($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family: 'Noto Sans Japanese',Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    @if $pc_size==0px {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==0vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: (( $tab_size / $tab ) * 10000vw ) / 100;
+        }
+    }
+    @if $sp_size==0vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: (( $sp_size / $sp ) * 10000vw ) / 100;
+        }
+    }
+}
+
+@mixin fontSizePc($pc_size:0px) {
+    @include media($pc){
+        font-size: $pc_size+px;
+    }
+    @include media($tab){
+        font-size: (( $pc_size / $tabSizePxNone ) * 10000vw ) / 100;
+    }
+}
+@mixin fontSizeSp($sp_size:0px) {
+    font-size: (( $sp_size / 375 ) * 10000vw ) / 100;
+}
+
+
+@mixin fontVw($parentPxWidth,$pc_size:16px){
+    font-size: (( $pc_size / $parentPxWidth ) * 10000vw ) / 100;
+}
+@mixin fontVwSp($parentPxWidth,$pc_size:16px){
+    font-size: (( $pc_size / 375 ) * 10000vw ) / 100;
+}

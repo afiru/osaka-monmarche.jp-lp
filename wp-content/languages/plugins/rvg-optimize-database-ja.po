@@ -1,0 +1,487 @@
+# Translation of Plugins - Optimize Database after Deleting Revisions - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Optimize Database after Deleting Revisions - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-05-04 08:32:07+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Optimize Database after Deleting Revisions - Stable (latest release)\n"
+
+#: rvg-optimize-db.php:535
+msgid "Settings"
+msgstr "設定"
+
+#: rvg-optimize-db.php:677
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: rvg-optimize-db.php:528 rvg-optimize-db.php:834
+msgid "Company"
+msgstr "会社"
+
+#: rvg-optimize-db.php:47 rvg-optimize-db.php:48 rvg-optimize-db.php:69
+#: rvg-optimize-db.php:70 rvg-optimize-db.php:90 rvg-optimize-db.php:91
+#: rvg-optimize-db.php:110 rvg-optimize-db.php:111
+msgid "Optimize Database"
+msgstr "データベース最適化"
+
+#: rvg-optimize-db.php:1972
+msgid "The Netherlands"
+msgstr "オランダ"
+
+#: rvg-optimize-db.php:1209
+msgid "table name"
+msgstr "テーブル名"
+
+#: rvg-optimize-db.php:1210
+msgid "optimization result"
+msgstr "最適化の結果"
+
+#: rvg-optimize-db.php:1211
+msgid "engine"
+msgstr "エンジン"
+
+#: rvg-optimize-db.php:1212
+msgid "table rows"
+msgstr "テーブルの行"
+
+#: rvg-optimize-db.php:1213
+msgid "table size"
+msgstr "テーブルのサイズ"
+
+#: rvg-optimize-db.php:524 rvg-optimize-db.php:830
+msgid "Plugin version"
+msgstr "プラグインのバージョン"
+
+#: rvg-optimize-db.php:526 rvg-optimize-db.php:832
+msgid "Download page"
+msgstr "ダウンロードページ"
+
+#: rvg-optimize-db.php:529 rvg-optimize-db.php:835
+msgid "Donation page"
+msgstr "寄付ページ"
+
+#: rvg-optimize-db.php:1042
+msgid "comment date"
+msgstr "コメントの日付"
+
+#: rvg-optimize-db.php:1247
+msgid "size of the database"
+msgstr "データベースのサイズ"
+
+#: rvg-optimize-db.php:1250
+msgid "BEFORE optimization"
+msgstr "最適化前"
+
+#: rvg-optimize-db.php:1254
+msgid "AFTER optimization"
+msgstr "最適化後"
+
+#: rvg-optimize-db.php:1285
+msgid "seconds"
+msgstr "秒"
+
+#: rvg-optimize-db.php:1897
+msgid "Table is already up to date"
+msgstr "テーブルはすでに最新です"
+
+#: rvg-optimize-db.php:1976
+msgid "time"
+msgstr "時刻"
+
+#: rvg-optimize-db.php:936 rvg-optimize-db.php:987 rvg-optimize-db.php:1039
+msgid "prefix"
+msgstr "接頭辞"
+
+#: rvg-optimize-db.php:990
+msgid "date"
+msgstr "日付"
+
+#: rvg-optimize-db.php:618
+msgid "hrs"
+msgstr "時間"
+
+#: rvg-optimize-db.php:839
+msgid "Current settings"
+msgstr "現在の設定"
+
+#: rvg-optimize-db.php:878
+msgid "Change Settings"
+msgstr "設定を変更する"
+
+#: rvg-optimize-db.php:855
+msgid "Number of excluded tables"
+msgstr "除外されたテーブルの数"
+
+#: rvg-optimize-db.php:741 rvg-optimize-db.php:748 rvg-optimize-db.php:755
+#: rvg-optimize-db.php:762 rvg-optimize-db.php:770 rvg-optimize-db.php:777
+msgid "NO"
+msgstr "いいえ"
+
+#: rvg-optimize-db.php:741 rvg-optimize-db.php:748 rvg-optimize-db.php:755
+#: rvg-optimize-db.php:762 rvg-optimize-db.php:770 rvg-optimize-db.php:777
+msgid "YES"
+msgstr "はい"
+
+#: rvg-optimize-db.php:611
+msgid "Time"
+msgstr "時刻"
+
+#: rvg-optimize-db.php:178
+msgid "Once Weekly"
+msgstr "週1回"
+
+#: rvg-optimize-db.php:649
+msgid "check all tables"
+msgstr "すべてのテーブルを選択"
+
+#: rvg-optimize-db.php:679
+msgid "Go To Optimizer"
+msgstr "最適化ページに戻る"
+
+#: rvg-optimize-db.php:884 rvg-optimize-db.php:1294
+msgid "View Log File"
+msgstr "ログファイルを表示"
+
+#: rvg-optimize-db.php:790
+msgid "ONCE DAILY"
+msgstr "毎日"
+
+#: rvg-optimize-db.php:792
+msgid "ONCE WEEKLY"
+msgstr "毎週"
+
+#: rvg-optimize-db.php:575 rvg-optimize-db.php:851
+msgid "Delete pingbacks and trackbacks"
+msgstr "ピンバックとトラックバックを削除"
+
+#: rvg-optimize-db.php:1040
+msgid "comment author"
+msgstr "コメント投稿者"
+
+#: rvg-optimize-db.php:1034
+msgid "DELETEED SPAMMED ITEMS"
+msgstr "削除済みスパム項目"
+
+#: rvg-optimize-db.php:937
+msgid "post / page"
+msgstr "投稿 / ページ"
+
+#. Author URI of the plugin/theme
+msgid "http://cagewebdev.com"
+msgstr "http://cagewebdev.com"
+
+#. Plugin URI of the plugin/theme
+msgid "http://cagewebdev.com/index.php/optimize-database-after-deleting-revisions-wordpress-plugin/"
+msgstr "http://cagewebdev.com/index.php/optimize-database-after-deleting-revisions-wordpress-plugin/"
+
+#: rvg-optimize-db.php:820
+msgid "Optimize your WordPress Database"
+msgstr "WordPress のデータベースを最適化"
+
+#: rvg-optimize-db.php:989
+msgid "IP address / title"
+msgstr "IPアドレス / タイトル"
+
+#: rvg-optimize-db.php:1277
+msgid "DONE!"
+msgstr "完了 !"
+
+#: rvg-optimize-db.php:525 rvg-optimize-db.php:831
+msgid "Plugin page"
+msgstr "プラグインのページ"
+
+#: rvg-optimize-db.php:551 rvg-optimize-db.php:843
+msgid "Delete trashed items"
+msgstr "ゴミ箱を空にする"
+
+#: rvg-optimize-db.php:547
+msgid "('0' means: delete <u>ALL</u> revisions)"
+msgstr "(0 : <u>すべて</u>の編集履歴を削除)"
+
+#: rvg-optimize-db.php:569 rvg-optimize-db.php:849
+msgid "Delete expired transients"
+msgstr "期限切れの一時生成データを削除"
+
+#: rvg-optimize-db.php:591 rvg-optimize-db.php:798
+msgid "NOT SCHEDULED"
+msgstr "予定なし"
+
+#: rvg-optimize-db.php:603
+msgid "run optimization WEEKLY"
+msgstr "1週間ごとに最適化を実行"
+
+#: rvg-optimize-db.php:600
+msgid "run optimization DAILY"
+msgstr "1日ごとに最適化を実行"
+
+#: rvg-optimize-db.php:597
+msgid "run optimization TWICE A DAY"
+msgstr "1日2回最適化を実行"
+
+#: rvg-optimize-db.php:594
+msgid "run optimization HOURLY"
+msgstr "1時間ごとに最適化を実行"
+
+#: rvg-optimize-db.php:587 rvg-optimize-db.php:857
+msgid "Scheduler"
+msgstr "定期的に実行"
+
+#: rvg-optimize-db.php:581 rvg-optimize-db.php:853
+msgid "Keep a log"
+msgstr "ログを保存"
+
+#: rvg-optimize-db.php:563 rvg-optimize-db.php:847
+msgid "Delete unused tags"
+msgstr "使用されていないタグを削除"
+
+#: rvg-optimize-db.php:557 rvg-optimize-db.php:845
+msgid "Delete spammed items"
+msgstr "スパムの項目を削除"
+
+#: rvg-optimize-db.php:631
+msgid "Show '1-click' link in Admin Bar"
+msgstr "管理バーに「1クリック」リンクを表示"
+
+#: rvg-optimize-db.php:638
+msgid "Show an icon in the Admin Menu"
+msgstr "管理メニューにアイコンを表示"
+
+#: rvg-optimize-db.php:634 rvg-optimize-db.php:641
+msgid "(change will be visible after loading the next page)"
+msgstr "(変更は次回ページを読み込んだあとに表示されます)"
+
+#: rvg-optimize-db.php:646
+msgid "EXCLUDE DATABASE TABLES FROM OPTIMIZATION: <span class=\"odb-underline-red\">CHECKED</span> TABLES <span class=\"odb-underline-red\">WON'T</span> BE OPTIMIZED!</span>"
+msgstr "最適化から除外するデータベースのテーブル: <span class=\"odb-underline-red\">チェックした</span>テーブルは<span class=\"odb-underline-red\">最適化されません</span>。</span>"
+
+#: rvg-optimize-db.php:651
+msgid "uncheck all tables"
+msgstr "すべてのテーブルの選択解除"
+
+#: rvg-optimize-db.php:653
+msgid "check all NON-WordPress tables"
+msgstr "WordPress 固有のものではないすべてのテーブルを選択"
+
+#: rvg-optimize-db.php:786
+msgid "ONCE HOURLY"
+msgstr "毎時間"
+
+#: rvg-optimize-db.php:788
+msgid "TWICE DAILY"
+msgstr "毎日2回"
+
+#: rvg-optimize-db.php:864
+msgid "Next scheduled run"
+msgstr "次回の実行予定"
+
+#: rvg-optimize-db.php:908
+msgid "Cleaning Database"
+msgstr "データベースを掃除中"
+
+#: rvg-optimize-db.php:895
+msgid "Start Optimization"
+msgstr "最適化を開始"
+
+#: rvg-optimize-db.php:886 rvg-optimize-db.php:1296
+msgid "Delete Log File"
+msgstr "ログファイルを削除"
+
+#: rvg-optimize-db.php:1041
+msgid "comment author email"
+msgstr "コメント投稿者のメール"
+
+#: rvg-optimize-db.php:997
+msgid "total number of trashed items deleted"
+msgstr "削除したゴミ箱内の項目の総数"
+
+#: rvg-optimize-db.php:1049
+msgid "total number of spammed items deleted"
+msgstr "削除したスパム項目の総数"
+
+#: rvg-optimize-db.php:982
+msgid "DELETED TRASHED ITEMS"
+msgstr "削除済みのゴミ箱の項目"
+
+#: rvg-optimize-db.php:956
+msgid "No REVISIONS found to delete"
+msgstr "削除する編集履歴がありません"
+
+#: rvg-optimize-db.php:946
+msgid "total number of revisions deleted"
+msgstr "削除した編集履歴の総数"
+
+#: rvg-optimize-db.php:939
+msgid "revisions deleted"
+msgstr "削除された編集履歴"
+
+#: rvg-optimize-db.php:938
+msgid "revision date"
+msgstr "編集履歴の日付"
+
+#: rvg-optimize-db.php:931
+msgid "DELETED REVISIONS"
+msgstr "削除した編集履歴"
+
+#: rvg-optimize-db.php:841
+msgid "Maximum number of - most recent - revisions to keep per post / page"
+msgstr "最新の編集履歴の最大保持数 - 1投稿 / 1ページあたり"
+
+#: rvg-optimize-db.php:543
+msgid "Maximum number of - most recent - revisions<br />to keep per post / page"
+msgstr "最新の編集履歴の最大保持数<br />1投稿 / 1ページあたり"
+
+#: rvg-optimize-db.php:1007
+msgid "No TRASHED ITEMS found to delete"
+msgstr "削除するゴミ箱内の項目はありません"
+
+#: rvg-optimize-db.php:1059
+msgid "No SPAMMED ITEMS found to delete"
+msgstr "削除するスパム項目はありません"
+
+#: rvg-optimize-db.php:1083
+msgid "NUMBER OF UNUSED TAGS DELETED"
+msgstr "削除された未使用のタグの数"
+
+#: rvg-optimize-db.php:1091
+msgid "No UNUSED TAGS found to delete"
+msgstr "削除する未使用のタグはありません"
+
+#: rvg-optimize-db.php:1115
+msgid "NUMBER OF EXPIRED TRANSIENTS DELETED"
+msgstr "削除された期限切れの一時生成データの数"
+
+#: rvg-optimize-db.php:1123
+msgid "No EXPIRED TRANSIENTS found to delete"
+msgstr "削除する期限切れの一時生成データはありません"
+
+#: rvg-optimize-db.php:1155
+msgid "No PINGBACKS nor TRACKBACKS found to delete"
+msgstr "削除するピンバックとトラックバックはありません"
+
+#: rvg-optimize-db.php:1147
+msgid "NUMBER OF PINGBACKS AND TRACKBACKS DELETED"
+msgstr "削除されたピンバックとトラックバックの数"
+
+#: rvg-optimize-db.php:988
+msgid "type"
+msgstr "種類"
+
+#: rvg-optimize-db.php:1262
+msgid "TOTAL SAVINGS SINCE THE FIRST RUN"
+msgstr "初回実行時からの合計確保サイズ"
+
+#: rvg-optimize-db.php:1258
+msgid "SAVINGS THIS TIME"
+msgstr "今回の確保サイズ"
+
+#: rvg-optimize-db.php:1239
+msgid "Savings"
+msgstr "確保"
+
+#. Author of the plugin/theme
+msgid "CAGE Web Design | Rolf van Gelder, Eindhoven, The Netherlands"
+msgstr "CAGE ウェブデザイン | Rolf van Gelder, アイントホーフェン, オランダ"
+
+#: rvg-optimize-db.php:1201
+msgid "Optimizing Database Tables"
+msgstr "データベースのテーブルの最適化"
+
+#: rvg-optimize-db.php:1986
+msgid "database size AFTER"
+msgstr "最適化後のサイズ"
+
+#: rvg-optimize-db.php:1985
+msgid "database size BEFORE"
+msgstr "最適化前のサイズ"
+
+#: rvg-optimize-db.php:1987
+msgid "SAVINGS"
+msgstr "確保"
+
+#: rvg-optimize-db.php:1984
+msgid "nr of optimized tables"
+msgstr "最適化されたテーブル数"
+
+#: rvg-optimize-db.php:1982
+msgid "deleted<br />pingbacks<br />trackbacks"
+msgstr "削除された<br />ピンバック<br />トラックバック"
+
+#: rvg-optimize-db.php:1981
+msgid "deleted<br />transients"
+msgstr "<br />一時生成データ"
+
+#: rvg-optimize-db.php:1980
+msgid "deleted<br />tags"
+msgstr "削除された<br />タグ"
+
+#: rvg-optimize-db.php:1979
+msgid "deleted<br />spam"
+msgstr "削除された<br />スパム"
+
+#: rvg-optimize-db.php:1978
+msgid "deleted<br />trash"
+msgstr "削除された<br />ゴミ箱項目"
+
+#: rvg-optimize-db.php:1977
+msgid "deleted<br />revisions"
+msgstr "削除された<br />編集履歴"
+
+#: rvg-optimize-db.php:872
+msgid "Total savings since the first run"
+msgstr "初回実行時からの合計確保サイズ"
+
+#. #-#-#-#-#  tmp-rvg-optimize-database.pot (Optimize Database after Deleting
+#. Revisions 3.4.8)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: rvg-optimize-db.php:517
+msgid "Optimize Database after Deleting Revisions"
+msgstr "Optimize Database after Deleting Revisions"
+
+#: rvg-optimize-db.php:1972
+msgid "A WordPress Plugin by"
+msgstr "WordPress プラグイン by"
+
+#: rvg-optimize-db.php:1896
+msgid "<span class=\"odb-optimized\">TABLE OPTIMIZED</span>"
+msgstr "<span class=\"odb-optimized\">テーブル最適化完了</span>"
+
+#. Description of the plugin/theme
+msgid "Optimizes the Wordpress Database after Cleaning it out"
+msgstr "WordPress のデータベースを掃除して最適化"
+
+#: rvg-optimize-db.php:451
+msgid "Click <a href=\"tools.php?page=rvg-optimize-db.php\" class=\"odb-bold\">HERE</a> to run the optimization"
+msgstr "<a href=\"tools.php?page=rvg-optimize-db.php\" class=\"odb-bold\">ここ</a>をクリックして最適化を実行"
+
+#: rvg-optimize-db.php:449
+msgid "Optimize Database after Deleting Revisions SETTINGS UPDATED"
+msgstr "Optimize Database after Deleting Revisions 設定を更新しました"
+
+#: rvg-optimize-db.php:521
+msgid "is an one-click plugin to clean and optimize your WordPress database"
+msgstr "WordPress のデータベースを掃除し最適化する1クリックのプラグイン"
+
+#: rvg-optimize-db.php:1983
+msgid "deleted<br />orphans"
+msgstr "削除された<br />孤立"
+
+#: rvg-optimize-db.php:149
+msgid "Optimize DB (1 click)"
+msgstr "DB最適化 (1クリック)"
+
+#: rvg-optimize-db.php:1283
+msgid "Optimization took"
+msgstr "最適化にかかった時間"
+
+#: rvg-optimize-db.php:1890
+msgid "InnoDB table: skipped..."
+msgstr "InnoDB テーブル: 処理を省略..."
+
+#: rvg-optimize-db.php:527 rvg-optimize-db.php:833
+msgid "Author"
+msgstr "開発者"

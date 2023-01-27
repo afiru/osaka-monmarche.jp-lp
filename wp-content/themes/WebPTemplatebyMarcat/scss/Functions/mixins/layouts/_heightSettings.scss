@@ -1,0 +1,8 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin heightVw($pxheight) {
+    height: (( $pxheight / 1920 ) * 10000vw ) / 100;
+}
+@mixin heightVwSp($pxheight) {
+    height: (( $pxheight / 375 ) * 10000vw ) / 100;
+}

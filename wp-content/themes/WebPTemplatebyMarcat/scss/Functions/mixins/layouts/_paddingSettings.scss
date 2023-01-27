@@ -1,0 +1,71 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin paddingPercent($parentPxWidth, $mTop, $mRight, $mBottom, $mLeft){
+    @if $mLeft == auto or $mRight == auto {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: 0 + 0px;
+        padding-right: 0 + 0px;
+        @include media($tab) {
+            padding-top:floor((($mTop / $parentPxWidth) * 10000%)) / 100;
+            padding-bottom: floor((($mBottom / $parentPxWidth) * 10000%)) / 100;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+    }@else {
+        padding-top:$mTop + 0px;
+        padding-bottom: $mBottom + 0px;
+        padding-left: $mLeft + 0px;
+        padding-right: $mRight + 0px;
+        @include media($tab) {
+            padding : floor((($mTop / $parentPxWidth) * 10000%)) / 100 floor((($mRight / $parentPxWidth) * 10000%)) / 100 floor((($mBottom / $parentPxWidth) * 10000%)) / 100 floor((($mLeft / $parentPxWidth) * 10000%)) / 100;
+        }        
+    }
+}
+@mixin paddingVw($mTop, $mRight, $mBottom, $mLeft) {
+    @if $mLeft == auto and $mRight == auto {
+        padding-top:(($mTop / 1920) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    @elseif $mLeft == auto{
+        padding-top:(($mTop / 1920) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        padding-left: auto;
+        padding-right: (($mRight / 1920) * 10000vw) / 100;
+    }
+    @elseif $mRight == auto{
+        padding-top:(($mTop / 1920) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 1920) * 10000vw) / 100;
+        padding-left: (($mLeft / 1920) * 10000vw) / 100;
+        padding-right: auto;
+    }
+    @else {
+        padding : (($mTop / 1920) * 10000vw) / 100 (($mRight / 1920) * 10000vw) / 100 (($mBottom / 1920) * 10000vw) / 100 (($mLeft / 1920) * 10000vw) / 100;
+    }
+}
+@mixin paddingVwSp($mTop, $mRight, $mBottom, $mLeft) {
+    @if $mLeft == auto and $mRight == auto {
+        padding-top:(($mTop / 375) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 375) * 10000vw) / 100;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    @elseif $mLeft == auto{
+        padding-top:(($mTop / 375) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 375) * 10000vw) / 100;
+        padding-left: auto;
+        padding-right: (($mRight / 375) * 10000vw) / 100;
+    }
+    @elseif $mRight == auto{
+        padding-top:(($mTop / 375) * 10000vw) / 100;
+        padding-bottom: (($mBottom / 375) * 10000vw) / 100;
+        padding-left: (($mLeft / 375) * 10000vw) / 100;
+        padding-right: auto;
+    }
+    @else {
+        padding : (($mTop / 375) * 10000vw) / 100 (($mRight / 375) * 10000vw) / 100 (($mBottom / 375) * 10000vw) / 100 (($mLeft / 375) * 10000vw) / 100;
+    }
+}

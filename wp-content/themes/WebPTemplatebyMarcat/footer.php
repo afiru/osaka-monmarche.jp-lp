@@ -1,0 +1,1 @@
+<?php get_template_part('include_files/footer/footer_defo'); ?>

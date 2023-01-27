@@ -1,0 +1,237 @@
+@charset "utf-8";
+@import "../bourbon/bourbon";
+@import "../neat/neat";
+
+$pc: new-breakpoint(min-width 1200px 12);
+$tab: new-breakpoint(max-width 1199px 8);
+$sp: new-breakpoint(max-width 640px 4);
+$gutter: golden-ratio(0em, 0);
+$fg-gutter: $gutter;
+
+//mixinを指定
+@mixin mintyou($fontsize) {
+    font-size: $fontsize;
+    font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+@mixin goshick($fontsize) {
+    font-size: $fontsize;
+    font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+@mixin marugoshick($fontsize) {
+    font-size: $fontsize;
+    font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro",
+        "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+
+@mixin rs_font_size($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.25vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==3vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin shinmintyou($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family:"sans-serif","Sawarabi Mincho","Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , 
+        "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , 
+        "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.25vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==3vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin shingosick($pc_size:1rem,$tab_size:1.25vw,$sp_size:3vw) {
+    font-family: 'Noto Sans Japanese',Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial ,
+        Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , 
+        "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , 
+        Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+    @if $pc_size==1rem {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @else {
+        @include media($pc){
+            font-size: $pc_size;
+        }
+    }
+    @if $tab_size==1.25vw {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @else {
+        @include media($tab){
+            font-size: $tab_size;
+        }
+    }
+    @if $sp_size==3vw {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+    @else {
+        @include media($sp){
+            font-size: $sp_size;
+        }
+    }
+}
+
+@mixin imgcenter {
+    height: auto;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0 0px 0 0;
+}
+@mixin kadomaru($radius) {
+    border-radius: $radius;        /* CSS3草案 */  
+    -webkit-border-radius: $radius;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: $radius;   /* Firefox用 */  
+}
+//テーブル用
+@mixin tablesetting {
+    @include media($pc) {
+        display: table;
+        width: 100%;
+    }
+    @include media($tab) {
+        display: table;
+        width: 100%;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}
+@mixin tdsetting($width) {
+    @include media($pc) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($tab) {
+        display: table-cell;
+        width: $width;
+    }
+    @include media($sp) {
+        display: block;
+        width: 100%;
+    }
+}
+@mixin wapper_setting() {
+    @include media($pc) {
+        width: 98%;
+        margin: 0 auto;
+    }
+    @include media($tab) {
+        width: 98%;
+        margin: 0 auto;
+    }
+    @include media($sp) {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+@mixin wapper_setting2() {
+    @include media($pc) {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    @include media($tab) {
+        width: 98%;
+        margin: 0 auto;
+    }
+    @include media($sp) {
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+
+//スマホのときだけ出す関数
+@mixin sp_only() {
+    @include media($pc) {
+        display: none;
+    }
+    @include media($tab) {
+        display: none;
+    }
+    @include media($sp) {
+        display: block;
+    }
+}
+
+@mixin pc_only() {
+    @include media($tab) {
+        display: block;
+    }
+    @include media($pc) {
+        display: block;
+    }
+    @include media($sp) {
+        display: none;
+    }
+}
+
+@mixin imgwidth($width:100%) {
+    img {
+        width:$width;
+        height: auto;        
+    }
+}

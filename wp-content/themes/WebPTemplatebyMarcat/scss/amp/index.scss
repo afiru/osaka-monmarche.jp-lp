@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import '../sass_base/mixin';
+@import '../sass_base/animate';
+@import '../sass_base/icon_arrow';
+
+.index_topics_field {
+    @include wapper_setting();
+    @include marginPercent(1024 , 20 , auto , 0, auto);
+}
+.index_topics_field_h2 {
+    width: 100%;
+    @include rs_font_size(36px,3.5190615835777126vw,5.625vw);
+    //フォント（px）【PC】:36pxpx |【Tab】36px |【sp】 36px 
+    //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+    border-bottom: 2px solid #000;
+    @include marginPercent(1024 , 0 , auto , 10, auto);
+    padding: 0 0 10px 0;
+}
+.index_topics_field_section {
+    width: 23.5%;
+    margin: 0 0 1.5% 0;
+    @include media($tab) {
+        width: 31.5%;
+    }
+    @include media($sp) {
+        @include ontener_width(640 , 315);
+    }
+
+}
+.index_topics_field_section_no_01 {
+    width: 49%;
+    margin: 0 0 1.5% 0;
+    @include media($tab) {
+        width: 66%;
+    }
+    @include media($sp) {
+        width: 100%;
+    } 
+}
+.index_topics_field_section_link {
+    color: #000;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    .bottom_title {
+        background-color: rgba(255,255,255,0.5);
+        @include paddingPercent(640 , 10 , 10 , 10 , 10);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+.topics_field_cat_p {
+    @include rs_font_size(18px,1.7595307917888563vw,3.125vw);
+    //フォント（px）【PC】:18pxpx |【Tab】18px |【sp】 20px 
+    //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    padding: 5px 10px;
+    background: #FFF;
+}
+
+.index_entry_field {
+    display: flex;
+    @include wapper_setting();
+    @include marginPercent(1024 , 60 , auto , 0, auto);
+}
+.index_entry_field_section {
+    width: 23.5%;
+    @include marginPercent(1024,0 , 0 , 40 , 0);
+    @include media($tab) {
+        width: 31.5%;
+    }
+    @include media($sp) {
+        @include ontener_width(640 , 315);
+    }
+}
+
+.index_entry_field_h2 {
+    @include rs_font_size(36px,3.5190615835777126vw,5.625vw);
+    //フォント（px）【PC】:36pxpx |【Tab】36px |【sp】 36px 
+    //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+    border-bottom: 2px solid #000;
+    @include marginPercent(1024 , 0 , auto , 10, auto);
+    @include paddingPercent(1024 , 0 , 0 , 10, 0);
+    width: 100%;
+    ruby {
+        display: block;
+        @include rs_font_size(22px,2.150537634408602vw,3.4375vw);
+        //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 22px 
+        //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+    }
+}
+.bottom_list_title {
+    h2 {
+        @include rs_font_size(22px,2.150537634408602vw,4.375vw);
+        //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 28px 
+        //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+        @include marginPercent(640 , 15 , auto , 15 , auto);
+    }
+    p {
+        @include rs_font_size(16px,1.5640273704789833vw,2.8125vw);
+        //フォント（px）【PC】:16pxpx |【Tab】16px |【sp】 18px 
+        //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+        line-height: 150%;
+    }
+}
+.index_entry_field_section .view_count {
+    @include marginPercent(320 , 15 , 0 , 0 , 0);
+    text-align: right;
+    font-weight: 600;
+    color: #df5656;
+    @include rs_font_size(22px,2.150537634408602vw,3.4375vw);
+    //フォント（px）【PC】:22pxpx |【Tab】22px |【sp】 22px 
+    //設定サイズ（px）【PC】:1024px |【Tab】1023px |【sp】 640px
+}

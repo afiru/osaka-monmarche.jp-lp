@@ -1,0 +1,20 @@
+@mixin lineheight($fontsize,$lineheight){
+    line-height: $lineheight/$fontsize;
+    @include lineHeightCrop($fontsize,$lineheight);
+}
+@mixin lineHeightCrop($fontsize,$lineheight) {
+    &::before {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-top: calc((1 - #{$lineheight/$fontsize}) * .5em);
+        content: "";
+    }
+    &::after {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-bottom: calc((1 - #{$lineheight/$fontsize}) * .5em);
+        content: "";
+    }
+}

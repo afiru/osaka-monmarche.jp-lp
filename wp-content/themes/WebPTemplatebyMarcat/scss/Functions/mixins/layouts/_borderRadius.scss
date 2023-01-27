@@ -1,0 +1,5 @@
+@mixin kadomaru($radius) {
+    border-radius: $radius;        /* CSS3草案 */  
+    -webkit-border-radius: $radius;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: $radius;   /* Firefox用 */  
+}

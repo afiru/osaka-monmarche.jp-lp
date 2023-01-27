@@ -1,0 +1,14 @@
+<?php
+$nav_list[0]="header_pc_nav_01";$nav_list[1]="header_pc_nav_02";$nav_list[2]="header_pc_nav_03";$nav_list[3]="header_pc_nav_04";
+$nav_list[4]="header_pc_nav_05";$nav_list[5]="header_pc_nav_06";$nav_list[6]="header_pc_nav_07";$nav_list[7]="header_sp_nav_01";
+$nav_list[8]="header_sp_nav_02";$nav_list[9]="header_sp_nav_03";$nav_list[10]="header_sp_nav_04";$nav_list[11]="header_sp_nav_05";
+$nav_list[12]="header_sp_nav_06";$nav_list[13]="header_sp_nav_07";$nav_list[14]="footer_sp_nav_01";$nav_list[15]="footer_sp_nav_02";
+$nav_list[16]="footer_sp_nav_03";$nav_list[17]="footer_sp_nav_04";$nav_list[18]="footer_sp_nav_05";$nav_list[19]="footer_sp_nav_06";
+$nav_list[20]="footer_sp_nav_07";$nav_list[21]="index_pc_nav_01";$nav_list[22]="index_pc_nav_02";$nav_list[23]="index_pc_nav_03";
+$nav_list[24]="index_pc_nav_04";$nav_list[25]="index_pc_nav_05";$nav_list[26]="index_pc_nav_06";$nav_list[27]="index_pc_nav_07";
+$nav_list[28]="index_pc_nav_08";$nav_list[29]="index_pc_nav_09";$nav_list[30]="index_sp_nav_01";$nav_list[31]="index_sp_nav_02";
+$nav_list[32]="index_sp_nav_03";$nav_list[33]="index_sp_nav_04";$nav_list[34]="index_sp_nav_05";$nav_list[35]="index_sp_nav_06";
+$nav_list[36]="index_sp_nav_07";$nav_list[37]="index_sp_nav_08";$nav_list[38]="index_sp_nav_09";$nav_list[39]="support_nav_001";
+$nav_list[40]="support_nav_002";$nav_list[41]="support_nav_003";$nav_list[42]="support_nav_004";$nav_list[43]="support_nav_005";
+$nav_list[44]="support_nav_006";$nav_list[45]="support_nav_007";$nav_list[46]="support_nav_008";$nav_list[47]="support_nav_009";
+?>

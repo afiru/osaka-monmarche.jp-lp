@@ -1,0 +1,1170 @@
+@charset "utf-8";
+@import 'mixin';
+
+@mixin arrow_base($color) {
+    &{
+	color:$color;
+        position: relative;
+        display: inline-block;
+        padding: 0 0 0 16px;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+    &::before,
+    &::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        content: "";
+        vertical-align: middle;
+    }
+}
+
+//シンプルな矢印アイコン
+@mixin arrow_type01($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        width: 5px;
+        height: 1px;
+        background: $color;
+    }
+    &::after{
+    left: 4px;
+    width: 5px;
+    height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//シンプルな矢印アイコン（大）
+@mixin arrow_type02($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 3px;
+        width: 7px;
+        height: 1px;
+        background: $color;
+    }
+    &::after{
+        left: 3px;
+        width: 7px;
+        height: 6px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//シンプルな太い矢印アイコン
+@mixin arrow_type03($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        width: 6px;
+        height: 2px;
+        background: $color;
+    }
+    &::after{
+        left: 4px;
+        width: 4px;
+        height: 4px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//シンプルな太い矢印アイコン
+@mixin arrow_type04($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 2px;
+        width: 7px;
+        height: 3px;
+        background: $color;
+    }
+    &::after{
+        left: 2px;
+        width: 6px;
+        height: 6px;
+        border-top: 3px solid $color;
+        border-right: 3px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//右上向きの矢印アイコン
+@mixin arrow_type05($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+    }
+    &::after{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+}
+
+//右上向きの矢印アイコン（大）
+@mixin arrow_type06($color) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    &::after{
+        left: 1px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+    }
+}
+
+//右下向きの矢印アイコン
+@mixin arrow_type07($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 3px;
+        width: 9px;
+        height: 1px;
+        background: $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        border-right: 1px solid $color;
+        border-bottom: 1px solid $color;
+    }
+}
+
+//右下向きの矢印アイコン（大）
+@mixin arrow_type08($color) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        left: 1px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid $color;
+        border-bottom: 2px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン
+@mixin arrow_type09($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        box-sizing: border-box;
+        width: 4px;
+        height: 4px;
+        border: 4px solid transparent;
+        border-left: 4px solid $color;
+    }
+    &::after{
+        left: 0;
+        width: 6px;
+        height: 4px;
+        border-left: 4px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン（大）
+@mixin arrow_type10($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        box-sizing: border-box;
+        width: 6px;
+        height: 6px;
+        border: 6px solid transparent;
+        border-left: 6px solid $color;
+    }
+    &::after{
+        left: 0;
+        width: 8px;
+        height: 6px;
+        border-left: 4px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン2
+@mixin arrow_type11($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 1px;
+        width: 6px;
+        height: 4px;
+        background: $color;
+    }
+    &::after{
+        left: 7px;
+        box-sizing: border-box;
+        width: 2px;
+        height: 2px;
+        border: 2px solid transparent;
+        border-left: 2px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン2（大）
+@mixin arrow_type12($color) {
+    @include arrow_base($color);
+    &::before{
+        width: 7px;
+        height: 6px;
+        background: $color;
+    }
+    &::after{
+        left: 7px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//右上に曲がった矢印アイコン
+@mixin arrow_type13($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 7px;
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border: 5px solid transparent;
+        border-left: 5px solid $color;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    &::after{
+        top: 7px;
+        left: -2px;
+        border: 0 solid transparent;
+        border-left: 3px solid $color;
+        border-radius: 0 0 0 10px;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+//右上に曲がった矢印アイコン
+@mixin arrow_type14($color) {
+    @include arrow_base($color);
+    &::before{
+        top: 8px;
+        left: 7px;
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border: 5px solid transparent;
+        border-left: 5px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        left: -1px;
+        border: 0 solid transparent;
+        border-top: 3px solid $color;
+        border-radius: 10px 0 0;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//三角の矢印アイコン
+@mixin arrow_type15($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 4px;
+        box-sizing: border-box;
+        width: 4px;
+        height: 4px;
+        border: 4px solid transparent;
+        border-left: 4px solid $color;
+    }
+}
+
+//三角の矢印アイコン（正円背景）
+@mixin arrow_type16($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: $backcolor;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（角丸背景）
+@mixin arrow_type17($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+        background: $backcolor;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（四角背景）
+@mixin arrow_type18($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        background: $backcolor;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（正円枠）
+@mixin arrow_type19($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（角丸枠）
+@mixin arrow_type20($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（四角枠）
+@mixin arrow_type21($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+    }
+    &::after{
+        left: 5px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//くの字の矢印アイコン
+@mixin arrow_type22($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 3px;
+        width: 7px;
+        height: 7px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の太め矢印アイコン
+@mixin arrow_type23($color) {
+    @include arrow_base($color);
+    &::before{
+        left: 3px;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（正円背景）
+@mixin arrow_type24($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: $backcolor;
+    }
+    &::after{
+        left: 2px;
+        width: 5px;
+        height: 5px;
+        border-top: 2px solid #000;
+        border-right: 2px solid #000;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸背景）
+@mixin arrow_type25($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+        background: $backcolor;
+    }
+    &::after{
+        left: 2px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸背景）
+@mixin arrow_type26($color,$backcolor) {
+    @include arrow_base($color);
+    &::before{
+        width: 12px;
+        height: 12px;
+        background: $backcolor;
+    }
+    &::after{
+        left: 2px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（正円枠）
+@mixin arrow_type27($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    &::after{
+        left: 2px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸枠）
+@mixin arrow_type28($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+    }
+    &::after{
+    left: 2px;
+    width: 5px;
+    height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（四角枠）
+@mixin arrow_type29($color) {
+    @include arrow_base($color);
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+    }
+    &::after{
+    left: 2px;
+    width: 5px;
+    height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@mixin arrow_base_type_02() {
+    &{
+        position: relative;
+        display: inline-block;
+        padding: 0 16px 0 0;
+        vertical-align: middle;
+        text-decoration: none;
+        
+    }
+    &::before,
+    &::after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        content: "";
+        vertical-align: middle;
+    }
+}
+//シンプルな矢印アイコン
+@mixin arrow_type01_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 4px;
+        width: 5px;
+        height: 1px;
+        background: $color;
+    }
+    &::after{
+        right: 4px;
+        width: 4px;
+        height: 4px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//シンプルな矢印アイコン（大）
+@mixin arrow_type02_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 3px;
+        width: 7px;
+        height: 1px;
+        background: $color;
+    }
+    &::after{
+        right: 3px;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+//シンプルな太い矢印アイコン
+@mixin arrow_type03_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 4px;
+        width: 6px;
+        height: 2px;
+        background: $color;
+    }
+    &::after{
+        right: 4px;
+        width: 4px;
+        height: 4px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+//シンプルな太い矢印アイコン
+@mixin arrow_type04_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 2px;
+        width: 7px;
+        height: 3px;
+        background: $color;
+    }
+    &::after{
+        right: 2px;
+        width: 6px;
+        height: 6px;
+        border-top: 3px solid $color;
+        border-right: 3px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+//右上向きの矢印アイコン
+@mixin arrow_type05_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 4px;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+    }
+    &::after{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+}
+//右上向きの矢印アイコン（大）
+@mixin arrow_type06_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    &::after{
+        right: 1px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+    }
+}
+//右下向きの矢印アイコン
+@mixin arrow_type07_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 3px;
+        width: 9px;
+        height: 1px;
+        background: $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        right: 4px;
+        width: 6px;
+        height: 6px;
+        border-right: 1px solid $color;
+        border-bottom: 1px solid $color;
+    }
+}
+//右下向きの矢印アイコン（大）
+@mixin arrow_type08_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 2px;
+        background: $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        right: 1px;
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid $color;
+        border-bottom: 2px solid $color;
+    }
+}
+//三角＋四角の矢印アイコン
+@mixin arrow_type09_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 4px;
+        box-sizing: border-box;
+        width: 4px;
+        height: 4px;
+        border: 4px solid transparent;
+        border-left: 4px solid $color;
+    }
+    &::after{
+        right: 0;
+        width: 6px;
+        height: 4px;
+        border-left: 4px solid $color;
+    }
+}
+//三角＋四角の矢印アイコン（大）
+@mixin arrow_type10_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 4px;
+        box-sizing: border-box;
+        width: 6px;
+        height: 6px;
+        border: 6px solid transparent;
+        border-left: 6px solid $color;
+    }
+    &::after{
+        right: 0;
+        width: 8px;
+        height: 6px;
+        border-left: 4px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン2
+@mixin arrow_type11_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 1px;
+        width: 6px;
+        height: 4px;
+        background: $color;
+    }
+    &::after{
+        right: 7px;
+        box-sizing: border-box;
+        width: 2px;
+        height: 2px;
+        border: 2px solid transparent;
+        border-left: 2px solid $color;
+    }
+}
+
+//三角＋四角の矢印アイコン2（大）
+@mixin arrow_type12_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 7px;
+        height: 6px;
+        background: $color;
+    }
+    &::after{
+        right: 7px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+//右上に曲がった矢印アイコン
+@mixin arrow_type13_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 7px;
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border: 5px solid transparent;
+        border-left: 5px solid $color;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    &::after{
+        top: 7px;
+        right: -2px;
+        border: 0 solid transparent;
+        border-left: 3px solid $color;
+        border-radius: 0 0 0 10px;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+//右上に曲がった矢印アイコン
+@mixin arrow_type14_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        top: 8px;
+        right: 7px;
+        box-sizing: border-box;
+        width: 5px;
+        height: 5px;
+        border: 5px solid transparent;
+        border-left: 5px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &::after{
+        right: -1px;
+        border: 0 solid transparent;
+        border-top: 3px solid $color;
+        border-radius: 10px 0 0;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+//三角の矢印アイコン
+@mixin arrow_type15_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 1px;
+        box-sizing: border-box;
+        width: 4px;
+        height: 4px;
+        border: 4px solid transparent;
+        border-left: 4px solid $color;
+    }
+}
+
+//三角の矢印アイコン（正円背景）
+@mixin arrow_type16_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: $backcolor;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+//三角の矢印アイコン（角丸背景）
+@mixin arrow_type17_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+        background: $backcolor;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（四角背景）
+@mixin arrow_type18_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        background: $backcolor;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+//三角の矢印アイコン（正円枠）
+@mixin arrow_type19_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（角丸枠）
+@mixin arrow_type20_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//三角の矢印アイコン（四角枠）
+@mixin arrow_type21_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+    }
+    &::after{
+        right: 1px;
+        box-sizing: border-box;
+        width: 3px;
+        height: 3px;
+        border: 3px solid transparent;
+        border-left: 3px solid $color;
+    }
+}
+
+//くの字の矢印アイコン
+@mixin arrow_type22_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 3px;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の太め矢印アイコン
+@mixin arrow_type23_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        right: 3px;
+        width: 6px;
+        height: 6px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+
+//くの字の矢印アイコン（正円背景）
+@mixin arrow_type24_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: $backcolor;
+    }
+    &::after{
+    left: 2px;
+    width: 5px;
+    height: 5px;
+        border-top: 2px solid $color;
+        border-right: 2px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸背景）
+@mixin arrow_type25_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+        background: $backcolor;
+    }
+    &::after{
+    right: 5px;
+    width: 5px;
+    height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸背景）
+@mixin arrow_type26_right($color,$backcolor) {
+    @include arrow_base_type_02();
+    &::before{
+        width: 12px;
+        height: 12px;
+        background: $backcolor;
+    }
+    &::after{
+right: 5px;
+    width: 5px;
+    height: 5px;
+
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（正円枠）
+@mixin arrow_type27_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    &::after{
+    right: 5px;
+    width: 5px;
+    height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（角丸枠）
+@mixin arrow_type28_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+        -webkit-border-radius: 25%;
+        border-radius: 25%;
+    }
+    &::after{
+        right: 5px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+//くの字の矢印アイコン（四角枠）
+@mixin arrow_type29_right($color) {
+    @include arrow_base_type_02();
+    &::before{
+        box-sizing: border-box;
+        width: 12px;
+        height: 12px;
+        border: 1px solid $color;
+    }
+    &::after{
+        right: 5px;
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid $color;
+        border-right: 1px solid $color;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+
+#page_top {
+  animation: cloak-in 0.75s;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.display_flex_center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.display_flex_stretch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.display_flex_stretch_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.display_flex_center_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    align-items: flex-end;
+}
+.display_flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.display_row {
+    flex-flow: row wrap;
+}
+body {
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    @include imgwidth();
+    @include rs_font_size();
+    color: #323232;
+    font-weight: 500;
+}
+body {
+    input,textarea,button {
+        font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        @include rs_font_size();
+        font-weight: 500;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        line-height: 1;
+        font-weight: 500;
+    }
+}
+
+#mintyou,.mintyou {
+    font-family: 游明朝 ,"Yu Mincho",YuMincho,"Hiragino Mincho ProN","Hiragino Mincho Pro",HGS 明朝 E,Meiryo,serif;
+}

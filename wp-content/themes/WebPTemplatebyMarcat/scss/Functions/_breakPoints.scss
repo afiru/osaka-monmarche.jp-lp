@@ -1,0 +1,31 @@
+//PC時
+$pc: new-breakpoint(min-width $pcSize 16);//PC時（基本ベース）
+
+//ここから50pxずつブレイクポイントを発動
+$max1650 : new-breakpoint(max-width 1650px 16);
+$max1600 : new-breakpoint(max-width 1600px 16);
+$max1500 : new-breakpoint(max-width 1500px 16);
+$max1450 : new-breakpoint(max-width 1450px 16);
+$max1400 : new-breakpoint(max-width 1400px 16);
+$max1350 : new-breakpoint(max-width 1350px 16);
+$max1300 : new-breakpoint(max-width 1300px 16);
+$max1250 : new-breakpoint(max-width 1250px 16);
+$max1200 : new-breakpoint(max-width 1200px 16);
+$max1150 : new-breakpoint(max-width 1150px 16);
+$max1100 : new-breakpoint(max-width 1100px 16);
+$max1050 : new-breakpoint(max-width 1050px 8);
+$max1000 : new-breakpoint(max-width 1000px 8);
+$max950 : new-breakpoint(max-width 950px 8);
+$max900 : new-breakpoint(max-width 900px 8);
+$max850 : new-breakpoint(max-width 850px 8);
+$max800 : new-breakpoint(max-width 800px 8);
+
+//タブレット時
+$tab: new-breakpoint(max-width $tabSize 8);//タブレット横
+$tab_tate: new-breakpoint(max-width $tabTateSize 6);//タブレット縦
+
+//スマホ時
+$sp: new-breakpoint(max-width $spSize 4);
+
+$gutter: golden-ratio(0em, 0);
+$fg-gutter: $gutter;

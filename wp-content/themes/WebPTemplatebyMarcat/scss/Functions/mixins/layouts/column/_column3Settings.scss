@@ -1,0 +1,24 @@
+@mixin archives_ul_settings_3clumes($wapper_size:100%,$width:100%,$clume_widht:100%,$defo_margin:0%,$double_margin:0%) {
+    width: floor((( $width / $wapper_size ) * 10000% )) / 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items:flex-start;
+    li {
+        justify-content: space-between;
+        width: $clume_widht;
+        margin: $defo_margin;        
+    }
+    @for $i from 1 through 12{
+        @if $i % 3 ==2 {
+            li:nth-child(#{$i}) {
+                margin: $double_margin;
+            }
+        }
+    }
+}

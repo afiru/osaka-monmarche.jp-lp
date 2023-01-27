@@ -1,0 +1,25 @@
+@import "../../mysetting";
+@import "../../_breakPoints";
+@mixin sp_only() {
+    @include media($pc) {
+        display: none;
+    }
+    @include media($tab) {
+        display: none;
+    }
+    @include media($sp) {
+        display: block;
+    }
+}
+
+@mixin pc_only() {
+    @include media($tab) {
+        display: block;
+    }
+    @include media($pc) {
+        display: block;
+    }
+    @include media($sp) {
+        display: none;
+    }
+}

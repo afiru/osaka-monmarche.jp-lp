@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import 'sass_base/mixin';
+@import 'sass_base/base';
+@import 'sass_base/animate';
+@import 'sass_base/_page_animete';
+@import 'sass_base/icon_arrow';
+@import 'sass_base/coding_guideline';
+
+.wapper {
+    @include wapper_setting();    
+}
+
+.page_wapper_master {
+    width: 750px;
+    margin: 0 auto;
+    img {
+        display: block;
+    }
+    @include media($sp) {
+        width: 100%;
+    }
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.txt_fotter {
+    background: #DEDEDE;
+    height: 60px;
+    display: flex;
+    @include rs_font_size(12px,1.171875vw,3.2vw);
+    //フォント（px）【PC】:12pxpx |【Tab】12px |【sp】 12px
+    //設定サイズ（px）【PC】:1024px |【Tab】1024px |【sp】 375px
+    justify-content: center;
+    align-items: center;
+}

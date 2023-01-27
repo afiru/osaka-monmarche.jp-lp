@@ -1,0 +1,49 @@
+html { box-sizing: border-box; }
+
+*, *::after, *::before { box-sizing: inherit; }
+
+html { box-sizing: border-box; }
+
+*, *::after, *::before { box-sizing: inherit; }
+
+html { box-sizing: border-box; }
+
+*, *::after, *::before { box-sizing: inherit; }
+
+.MarcatGiaSettingWapper { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: fadeIn; animation-name: fadeIn; }
+.MarcatGiaSettingWapper.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+.MarcatGiaSettingWapper.hinge { -webkit-animation-duration: 2s; animation-duration: 2s; }
+.MarcatGiaSettingWapper.flipOutX, .MarcatGiaSettingWapper.flipOutY, .MarcatGiaSettingWapper.bounceIn, .MarcatGiaSettingWapper.bounceOut { -webkit-animation-duration: .75s; animation-duration: .75s; }
+@-webkit-keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+@media screen and (min-width: 1200px) { .MarcatGiaSettingWapper { width: 98%; margin: 0 auto; } }
+@media print, screen and (max-width: 1199px) { .MarcatGiaSettingWapper { width: 98%; margin: 0 auto; } }
+@media screen and (max-width: 640px) { .MarcatGiaSettingWapper { width: 98%; margin: 0 auto; } }
+.MarcatGiaSettingWapper h2 { font-size: 20px !important; padding: 15px 0 15px 10px !important; margin: 25px 0 10px 0 !important; border-bottom: 1px solid #CCC; border-top: 1px solid #CCC; font-weight: 600; background: #FFF; text-align: center; }
+.MarcatGiaSettingWapper h2 + p { text-align: center; }
+
+.MarcatGiaSettingGnavi { margin: 4% auto; }
+.MarcatGiaSettingGnavi ul { max-width: 100%; margin-left: auto; margin-right: auto; }
+.MarcatGiaSettingGnavi ul::after { clear: both; content: ""; display: table; }
+.MarcatGiaSettingGnavi ul li { width: 20%; float: left; }
+@media screen and (max-width: 640px) { .MarcatGiaSettingGnavi ul li { width: 50%; } }
+.MarcatGiaSettingGnavi ul li a { overflow: hidden; display: inline-block; text-align: center; text-decoration: none; outline: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s; transition: all .3s; background-color: #FFF; border: 2px solid #FFF; color: #000; display: block; padding: 2% 0; font-weight: bold; }
+.MarcatGiaSettingGnavi ul li a::before { position: absolute; z-index: -1; display: block; content: ''; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s; transition: all .3s; }
+.MarcatGiaSettingGnavi ul li a::after { position: absolute; z-index: -1; display: block; content: ''; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .3s; transition: all .3s; }
+.MarcatGiaSettingGnavi ul li a:hover { background-color: #0085ba; border-color: #0085ba; color: #FFF; }
+.MarcatGiaSettingGnavi ul li.cheackd a { background: #0085ba; color: #FFF; border: 2px solid #0085ba; }
+
+.MarcatGiaSettingFunction_sec { margin: 5% 0 0 0; }
+.MarcatGiaSettingFunction_sec h3 { font-size: 18px !important; padding: 10px 0 10px 10px !important; margin: 0px 0 10px 0 !important; border-bottom: 1px solid #CCC; font-weight: 600; background: #FFF; text-align: left; }
+.MarcatGiaSettingFunction_sec .MarcatGiaSettingFunctionKiroku { margin: 2% 0; width: 100%; table-layout: fixed; }
+.MarcatGiaSettingFunction_sec .MarcatGiaSettingFunctionKiroku th, .MarcatGiaSettingFunction_sec .MarcatGiaSettingFunctionKiroku td { padding: 1%; }
+.MarcatGiaSettingFunction_sec .MarcatGiaSettingFunctionKiroku th { width: 20%; background: #FFF; text-align: center; }
+.MarcatGiaSettingFunction_sec .MarcatGiaSettingFunctionKiroku td { width: 80%; text-align: left; background: #FFF; }
+.MarcatGiaSettingFunction_sec ul { max-height: 350px; overflow: auto; margin: 0 1%; }
+.MarcatGiaSettingFunction_sec ul li { padding: 1% 0; border-bottom: 1px solid #CCC; display: table; table-layout: fixed; width: 100%; }
+.MarcatGiaSettingFunction_sec ul li h4 { display: table-cell; width: 20%; vertical-align: top; }
+.MarcatGiaSettingFunction_sec ul li p { display: table-cell; width: 80%; vertical-align: top; line-height: 150%; }
+
+/*# sourceMappingURL=MarcatGiaSettingsConfig.css.map */
