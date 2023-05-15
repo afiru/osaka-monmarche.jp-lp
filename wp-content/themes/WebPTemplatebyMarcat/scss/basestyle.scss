@@ -35,3 +35,94 @@
     justify-content: center;
     align-items: center;
 }
+.new03wap {
+    width: 750px;
+    margin: auto;
+    position: relative;
+    @include media($tab) {
+        @include ontener_width(1024 , 750 );
+    }
+    @include media($sp) {
+        @include ontener_width(375 , 375 );
+    }
+}
+.new03wap {
+    img {
+        display: block;
+    }
+}
+.header03 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.actionNew03 {
+    display: none;
+    &.active {
+        display: block;
+    }
+    &.nonactive {
+        display: none;
+    }
+}
+
+.new03footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #E5E5E5;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.8), 0px -4px 0px 1px rgba(10,10,10,0.01);
+}
+.new03footer {    
+    li {
+        
+        border-bottom: 2.5px solid #ED4A44;
+        cursor: pointer;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        color: #FFF;
+        font-size: 12px;
+        @include media($sp) {
+            font-size: 3.2vw;
+        }
+    }
+}
+.new03footer li{
+     background: #FFF;
+     color: #6E6E6D;
+     &.active {
+         color: #FFF;
+         background: #ED4A44;
+     }
+}
+//タブ
+.new03footerTab_5 {
+    li {
+        width: calc(20% - 1px) ;
+    }
+}
+.new03footerTab_4 {
+    li {
+        width: calc(25% - 1px) ;
+    }
+}
+.new03footerTab_3 {
+    li {
+        width: calc(33.33333333% - 1px) ;
+    }
+}
+.new03footerTab_2 {
+    li {
+        width: calc(50% - 1px) ;
+    }
+}
+.new03footerTab_1 {
+    li {
+        width: 100%;
+    }
+}

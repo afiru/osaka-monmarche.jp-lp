@@ -25,7 +25,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var home_url ="<?php echo home_url('/'); ?>";
     var theme_url = "<?php echo get_bloginfo('template_url'); ?>";
     var rest_url = "<?php echo home_url('/wp-json/wp/v2/'); ?>";
+    <?php if(is_single()): ?>
+        var post_id = <?php echo get_the_ID(); ?>;
+    <?php endif; ?>
 </script>
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js?ver=<?php echo date('Y-m-d-H-i-s'); ?>'></script>
+<script async src="//cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js?ver=<?php echo date('Y-m-d-H-i-s'); ?>"></script>
 <link rel="stylesheet" id='def_set_css' type="text/css" href="<?php echo get_bloginfo('template_url'); ?>/css/basestyle.css?ver=<?php echo date('Y-m-d'); ?>" media="all">
 </head>
 <body id="page_top">
@@ -34,4 +39,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PRPDCL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <div id="page_wapper_master" class="page_wapper_master">
+    <div id="page_wapper_master" class="new03wap">

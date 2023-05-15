@@ -168,3 +168,7 @@ function get_scf_img_loop_url_id($name) {
     $cf_sample = wp_get_attachment_image_src($name,'full');
     return $cf_sample;
 }
+function add_admin_css_js() {
+  wp_enqueue_style( 'admin_style', get_template_directory_uri() . '/css/editostyle.css' );
+}
+add_action( 'admin_enqueue_scripts', 'add_admin_css_js' );

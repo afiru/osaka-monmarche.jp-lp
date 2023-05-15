@@ -929,7 +929,7 @@ class Ai1wm_Main_Controller {
 						AI1WM_PLUGIN_NAME
 					),
 					__(
-						'<a href="https://import.wp-migration.com" target="_blank">Get unlimited</a>',
+						'<a href="https://servmask.com/products/unlimited-extension" target="_blank">Get unlimited</a>',
 						AI1WM_PLUGIN_NAME
 					)
 				),
